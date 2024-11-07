@@ -45,6 +45,7 @@ class User {
         return encoded.toString();
     }
 
+    // Decryption
     private String decodePassword(String encodedPassword) {
         StringBuilder decoded = new StringBuilder();
         for (char c : encodedPassword.toCharArray()) {
